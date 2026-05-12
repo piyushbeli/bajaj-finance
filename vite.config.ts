@@ -9,7 +9,7 @@ export default defineConfig({
     open: true,
     proxy: {
       '/api': {
-        target: 'http://51.20.95.77:8080',
+        target: 'http://bajajfinance-alb1s-ec2-1561512233.ap-south-1.elb.amazonaws.com',
         changeOrigin: true,
         secure: false,
       },
