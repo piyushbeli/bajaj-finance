@@ -5,11 +5,11 @@ import type { VehicleFormData, ApiResponse, VehicleListResponse } from '../types
  *
  * We always use a relative base path `/api/v1/bajaj`:
  * - In local development, Vite is configured (in `vite.config.ts`) to proxy
- *   `/api` requests to the backend at `http://51.20.95.77:8080`, so a browser
+ *   `/api` requests to the backend ALB, so a browser
  *   call to `http://localhost:3000/api/v1/bajaj/...` is transparently forwarded
- *   to `http://51.20.95.77:8080/api/v1/bajaj/...`.
+ *   to the backend API.
  * - In production on Vercel, `vercel.json` defines a rewrite from
- *   `/api/v1/bajaj/...` to `http://51.20.95.77:8080/api/v1/bajaj/...`, so the
+ *   `/api/v1/bajaj/...` to the backend ALB, so the
  *   browser always talks to the HTTPS frontend origin and Vercel does the HTTP
  *   call to the backend, avoiding mixed‑content errors.
  */

@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/v1/bajaj/:path*",
-      "destination": "http://51.20.95.77:8080/api/v1/bajaj/:path*"
+      "destination": "http://bajajfinance-alb1s-ec2-1561512233.ap-south-1.elb.amazonaws.com/api/v1/bajaj/:path*"
     }
   ]
 }
